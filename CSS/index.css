@@ -17,7 +17,13 @@ body{
 }
 
 
-
+.containerHear{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px0;
+}
 .box div{
     position: absolute;
     width: 50px;
@@ -198,7 +204,7 @@ body{
     position: relative;
     color: #039af800;
     -webkit-text-stroke: 0.1vw #039af836;
-    font-size: 2rem;
+    font-size: 4rem;
     text-transform: uppercase;
 
 }
@@ -830,7 +836,7 @@ footer .anim{
    height: 2rem;
    width: 70%;
    background-color: transparent;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid blue;          
    color: #039af8;
     outline: none;
     transition: 0.2s ease-out;

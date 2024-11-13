@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet GSAP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+    <p class="elt">drag me</p>
+    
+    <script>
+        // Votre code GSAP ici
+        let element = document.getElementsByClassName("elt")
+        // some example properties.
+        gsap.to(element, {
+           color : "red",
+           fontSize : 140 ,
+           position : "relative" ,
+           x:14 ,
+           y:-40 ,
+           yoyo : 1,
+           duration : 1.4
+           
+        });
+        let body = document.body
+
+        gsap.set(body ,{ 
+            display : 'flex',
+            justifyContent: "center" ,
+            alignItems : "center"
+        })
+        </script>
+</body>
+</html>
