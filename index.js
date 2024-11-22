@@ -1,16 +1,17 @@
- // Votre code GSAP ici
- let element = document.getElementsByClassName("ets")
- // some example properties.
- gsap.to(element, {
-    
-    fontSize : 140 ,
-    position : "relative" ,
-    x:14 ,
-    y:-40 ,
-    yoyo : 1,
-    duration : 1.4
-    
- });
+// Sélectionner tous les éléments avec la classe "ets"
+let elements = document.querySelectorAll(".ets");
+
+// Itérer sur chaque élément et appliquer l'animation
+elements.forEach(element => {
+    gsap.to(element, {
+        fontSize: 140,
+        position: "relative",
+        x: 14,
+        y: -40,
+        yoyo: true,
+        duration: 1.4
+    });
+});
  let body = document.body
 
  gsap.set(body ,{ 
